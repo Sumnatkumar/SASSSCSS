@@ -1,0 +1,51 @@
+SASS (Syntactically Awesome Stylesheets) and SCSS (Sassy CSS) are both preprocessor scripting languages that compile into CSS. 
+They make writing stylesheets more efficient and maintainable by introducing features that are not available in regular CSS, 
+such as variables, nesting, mixins, inheritance, and more.
+
+SASS
+
+    Syntax: Indentation-based (similar to Python).
+    File Extension: .sass
+    Features:
+        No curly braces {} or semicolons ;.
+        Simpler and more concise syntax but requires strict indentation.
+
+$primary-color: #3498db
+
+body
+  background-color: $primary-color
+
+nav
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+SCSS
+
+    Syntax: CSS-like syntax with the added features of SASS.
+    File Extension: .scss
+    Features:
+        Uses curly braces {} and semicolons ; like traditional CSS.
+        Easier for developers familiar with CSS to adapt.
+
+$primary-color: #3498db;
+
+body {
+  background-color: $primary-color;
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+
+Key Differences Between SASS and SCSS
+Feature		SASS			SCSS
+Syntax Style	Indentation-based	CSS-like syntax
+File Extension	.sass			.scss
+Curly Braces {}	Not used		Required
+Semicolons ;	Not used		Required
